@@ -1,4 +1,4 @@
-/* -*- Mode: Java; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- */
+/* -*- Mode: JavaScript; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- */
 
 'use strict';
 (function($){
@@ -41,7 +41,6 @@
 
 			var cubeAngle = angle * direction;
 			cube.css({
-				// should probably add all prefixes etc, but for 
 				'transform' : 'rotate(' + cubeAngle + 'deg)',
 				'transform-origin': direction == 1 ? '100% 100%' : '0% 100%', 
 				'margin-left': marginLeft + 'px', 
