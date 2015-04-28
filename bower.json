@@ -1,0 +1,13 @@
+{
+  "name": "things-gone-wrong",
+  "version": "0.0.0",
+  "dependencies": {
+    "bootstrap": "~3.0.0",
+    "modernizr": "~2.6.2",
+    "jquery": "~1.9.1",
+    "lesshat": "~3.0.2",
+    "bootstrap-colorpickersliders": "~3.0.1",
+    "tinycolor": "~1.1.2"
+  },
+  "devDependencies": {}
+}

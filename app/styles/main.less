@@ -1,0 +1,84 @@
+@import "../bower_components/bootstrap/less/bootstrap.less";
+@import "../bower_components/lesshat/build/lesshat.less";
+
+@icon-font-path: "../fonts/glyphicons/";
+
+@defaultColor: #333;
+@defaultSize: 70px;
+
+.keyframes(~'moving-background, from {background-position: 0 0} to {background-position: -512px 0}');
+
+.browsehappy {
+  margin: 0.2em 0; 
+  background: #ccc; 
+  color: #000; 
+  padding: 0.2em 0; 
+}
+
+html, body {
+  height: 100%;
+}
+
+body {
+  display: table;
+  width: 90%;
+  margin: 0 auto;
+}
+
+.container {
+  display: table-cell;
+  vertical-align: middle;
+  
+  .cube-container {
+    padding-top: 14%;
+    padding-left: 50%;
+    border-color: @defaultColor;
+    
+    .cube {
+      position: relative;
+      display: block;
+      
+      border-width: 1px;
+      border-style: solid; 
+      border-color: inherit;
+
+      width: @defaultSize;
+      height: @defaultSize;
+    }
+  }
+
+  .col-sm-4 {
+    margin-top: 10px;
+  } 
+  
+  blockquote {
+    font-size: 1.5em;
+    &:before, &after {
+      content: normal !important;
+    }
+  }
+  .wrong-is-fun {
+    max-width: 64px;
+    margin-right: 10px;
+  }
+  .colorpicker {
+    margin: 15px 0 0 0;
+    min-width: 250px;
+  }
+  
+  .background {
+    width: 100%;
+    padding: 1px 0 0 0;
+
+    background: @defaultColor repeating-linear-gradient(
+        90deg, transparent, transparent 10px, 
+      rgba(255,255,255,1) 5px, rgba(255,255,255,1) 15px);
+    
+    .animation(moving-background 5s linear infinite);
+  }
+}
+
+/* force hide the transparency slider as it seems there is no other way to disable it */
+.cp-transparency {
+  display: none !important;
+}
